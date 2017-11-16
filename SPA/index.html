@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+     <meta charset="utf-8" />
+    <title>Яловой Евгений Тестовое здание #2</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.1/jquery.fancybox.min.css" />
+    <script type="text/javascript" src="js/vue.js"></script>
+    <script src="js/vue-infinite-loading.js"></script>
+
+</head>
+    <body>
+    <header>
+    </header>
+<div class="photoss">
+        
+         <p class="imglist">
+  <a v-for="photo in photos" class="photo loader" :href="photo.url" data-fancybox="group1" data-type="image" :data-caption="photo.title">
+      <img :src="photo.thumbnailUrl" />
+             </a></p>
+    <a href="#" id="loadMore">Load More</a>
+
+
+</div>
+
+    <footer>
+    </footer>    
+    <script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.1/jquery.fancybox.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+    <script type="text/javascript" src="js/init.js"></script>
+    </body>
+</html>
